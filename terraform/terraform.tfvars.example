@@ -1,0 +1,27 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and customize the values
+
+aws_region = "us-east-1"
+
+project_name = "cloud-resume"
+
+environment = "prod"
+
+# S3 bucket name must be globally unique
+# Leave empty to auto-generate with random suffix
+s3_bucket_name = ""
+
+dynamodb_table_name = "cloud-resume-visitors"
+
+lambda_function_name = "cloud-resume-visitor-counter"
+
+api_gateway_name = "cloud-resume-api"
+
+cloudfront_price_class = "PriceClass_100"
+
+tags = {
+  Project     = "CloudResume"
+  ManagedBy   = "Terraform"
+  Environment = "Production"
+  Owner       = "YourName"
+}
