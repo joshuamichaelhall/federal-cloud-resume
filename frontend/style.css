@@ -1,0 +1,463 @@
+/* Federal Cloud Resume - Professional Stylesheet */
+
+/* ===== CSS Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Federal-appropriate color palette */
+    --primary-blue: #1e3a8a;
+    --secondary-blue: #3b82f6;
+    --light-blue: #dbeafe;
+    --dark-gray: #1f2937;
+    --medium-gray: #6b7280;
+    --light-gray: #f3f4f6;
+    --border-gray: #e5e7eb;
+    --white: #ffffff;
+    --accent-green: #059669;
+    
+    /* Typography */
+    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: 'Courier New', monospace;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+}
+
+header .subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.95;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+}
+
+.contact-info a {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: border-bottom 0.2s ease;
+}
+
+.contact-info a:hover {
+    border-bottom: 1px solid var(--white);
+}
+
+.separator {
+    opacity: 0.5;
+}
+
+.visitor-counter {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+}
+
+.counter-label {
+    font-weight: 500;
+    margin-right: var(--spacing-xs);
+}
+
+.counter-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--light-blue);
+}
+
+/* ===== Main Content ===== */
+main {
+    background-color: var(--white);
+}
+
+.section {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--border-gray);
+}
+
+.section h2 {
+    color: var(--primary-blue);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 3px solid var(--secondary-blue);
+}
+
+.section h3 {
+    color: var(--dark-gray);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.section h4 {
+    color: var(--medium-gray);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.section p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.section ul {
+    margin-left: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.section li {
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.5;
+}
+
+/* ===== Executive Summary ===== */
+#executive-summary p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* ===== Core Competencies ===== */
+.competency-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.competency-group h3 {
+    color: var(--secondary-blue);
+    font-size: 1.2rem;
+    margin-top: var(--spacing-sm);
+}
+
+/* ===== Certifications ===== */
+.cert-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.cert-group h3 {
+    color: var(--accent-green);
+    font-size: 1.15rem;
+}
+
+/* ===== Professional Experience ===== */
+.job {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--border-gray);
+}
+
+.job:last-child {
+    border-bottom: none;
+}
+
+.job-header h3 {
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.job-location {
+    color: var(--medium-gray);
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+}
+
+.job-summary {
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background-color: var(--light-gray);
+    border-left: 4px solid var(--secondary-blue);
+    border-radius: 4px;
+}
+
+.job-section {
+    margin-bottom: var(--spacing-md);
+}
+
+/* ===== Technical Proficiencies ===== */
+.tech-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.tech-group h3 {
+    color: var(--secondary-blue);
+}
+
+/* ===== Education ===== */
+.education-item {
+    margin-bottom: var(--spacing-md);
+}
+
+.education-item h3 {
+    color: var(--primary-blue);
+    margin-top: 0;
+}
+
+.school {
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.emphasis, .professional-role {
+    font-style: italic;
+    color: var(--medium-gray);
+    margin-top: var(--spacing-xs);
+}
+
+/* ===== Portfolio ===== */
+.project {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--light-gray);
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-green);
+}
+
+.project h3 {
+    color: var(--primary-blue);
+    margin-top: 0;
+}
+
+.project-link {
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.project-link a {
+    color: var(--secondary-blue);
+    text-decoration: none;
+    border-bottom: 2px solid var(--secondary-blue);
+}
+
+.project-link a:hover {
+    color: var(--primary-blue);
+    border-bottom-color: var(--primary-blue);
+}
+
+/* ===== Differentiators ===== */
+.differentiator-group {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background-color: var(--light-blue);
+    border-radius: 6px;
+}
+
+.differentiator-group h3 {
+    color: var(--primary-blue);
+    margin-top: 0;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    color: var(--medium-gray);
+}
+
+footer p {
+    margin: var(--spacing-xs) 0;
+}
+
+.availability {
+    font-weight: 600;
+    color: var(--accent-green);
+}
+
+/* ===== Links ===== */
+a {
+    color: var(--secondary-blue);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-blue);
+}
+
+/* ===== Strong/Bold Text ===== */
+strong {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+/* ===== Responsive Design ===== */
+@media screen and (max-width: 768px) {
+    body {
+        padding: var(--spacing-sm);
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+    
+    .separator {
+        display: none;
+    }
+    
+    .section {
+        padding: var(--spacing-md);
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section h3 {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+    
+    header {
+        padding: var(--spacing-md);
+    }
+    
+    header h1 {
+        font-size: 1.75rem;
+    }
+    
+    header .subtitle {
+        font-size: 1rem;
+    }
+    
+    .section {
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+    body {
+        max-width: 100%;
+        padding: 0;
+        font-size: 11pt;
+        color: #000;
+        background: white;
+    }
+    
+    header {
+        background: white;
+        color: #000;
+        border: 2px solid #000;
+        page-break-after: avoid;
+    }
+    
+    header h1 {
+        color: #000;
+    }
+    
+    header .subtitle {
+        color: #333;
+    }
+    
+    .visitor-counter {
+        display: none;
+    }
+    
+    .section {
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+    
+    .section h2 {
+        color: #000;
+        border-bottom-color: #000;
+    }
+    
+    .section h3, .section h4 {
+        color: #333;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #666;
+    }
+    
+    .project, .differentiator-group {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+    }
+    
+    footer {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-top: 2px solid #000;
+    }
+}
