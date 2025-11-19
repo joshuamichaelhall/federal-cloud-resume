@@ -1,28 +1,62 @@
-# Dependencies
-node_modules/
-*.log
+# AWS
+*.pem
+.aws/
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
 
-# Environment variables
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
 .env
-.env.local
+*.egg-info/
+dist/
+build/
+
+# Lambda deployment packages
+*.zip
+lambda_function.zip
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Project specific
+response.json
+curl-format.txt
+
+# Secrets (never commit)
+secrets.json
+credentials.json
+config.json
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
-
-# Build outputs
-dist/
-build/
-*.zip
-
-# Cloud provider specific
-.aws/
-.terraform/
-*.tfstate
-*.tfstate.backup
