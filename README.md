@@ -189,7 +189,7 @@ Claude was used as a development aid while all final edits and implementations w
 
 ---
 
-**Project Status:** ✅ Production Ready and Live  
-**Completion Date:** November 21, 2025  
-**Live URL:** https://joshuahall.tech  
-**Portfolio Use:** Ready for AWS re:Invent demos and Cloud Security Architect interviews
+**Project Status:** ✅ Production Ready and Live
+**Completion Date:** November 21, 2025
+**Live URL:** https://joshuahall.tech
+**Portfolio Use:** Ready for AWS re:Invent demos and Security Engineer interviews
