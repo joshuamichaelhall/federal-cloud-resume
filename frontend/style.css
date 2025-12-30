@@ -187,6 +187,12 @@ main {
     font-size: 1.15rem;
 }
 
+.cert-note {
+    margin-top: var(--spacing-sm);
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+}
+
 /* ===== Professional Experience ===== */
 .job {
     margin-bottom: var(--spacing-xl);

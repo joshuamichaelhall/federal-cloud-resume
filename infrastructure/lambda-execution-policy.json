@@ -14,7 +14,8 @@
       "Effect": "Allow",
       "Action": [
         "dynamodb:GetItem",
-        "dynamodb:UpdateItem"
+        "dynamodb:UpdateItem",
+        "dynamodb:PutItem"
       ],
       "Resource": "arn:aws:dynamodb:us-east-1:748955969582:table/visitor-counter"
     }
