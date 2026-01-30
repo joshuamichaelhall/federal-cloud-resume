@@ -2,7 +2,7 @@
 
 **Live Site:** https://joshuahall.tech
 
-Production serverless cloud resume demonstrating AWS architecture fundamentals and security best practices.
+Production serverless cloud resume demonstrating AWS architecture fundamentals and security best practices. Built by a CMMC Registered Practitioner (CCP exam passed) with 3+ years MSP security experience.
 
 ## Architecture Overview
 
@@ -130,17 +130,16 @@ Estimated monthly costs for low-traffic resume site:
 - **Lambda Warm Execution:** ~10ms
 - **DynamoDB Read/Write:** <10ms
 
-## Advanced Security Portfolio
+## Security Control Alignment
 
-This project demonstrates AWS serverless fundamentals. For advanced security architecture including:
-- CloudTrail centralized logging
-- Security Hub multi-account aggregation
-- GuardDuty threat detection
-- AWS Config compliance monitoring
-- Terraform Infrastructure as Code
-- NIST 800-53 control mappings
+This project demonstrates security controls aligned with federal frameworks:
 
-See the **Federal Security Dashboard** project (planned for February 2026).
+- **NIST 800-53 SC-8** - Transmission confidentiality (HTTPS/TLS)
+- **NIST 800-53 AC-6** - Least privilege (IAM policies)
+- **NIST 800-53 SC-28** - Protection of information at rest (DynamoDB encryption)
+- **NIST 800-53 AU-2** - Auditable events (CloudWatch logging)
+
+Relevant to CMMC Level 2 controls for protecting cloud-hosted assets.
 
 ## Lessons Learned
 
@@ -192,4 +191,4 @@ Claude was used as a development aid while all final edits and implementations w
 **Project Status:** ✅ Production Ready and Live
 **Completion Date:** November 21, 2025
 **Live URL:** https://joshuahall.tech
-**Portfolio Use:** Ready for AWS re:Invent demos and Security Engineer interviews
+**Author:** CMMC Registered Practitioner | AWS Solutions Architect Associate | Security+
